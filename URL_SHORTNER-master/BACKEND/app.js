@@ -16,7 +16,7 @@ dotenv.config("./.env")
 const app = express();
 
 app.use(cors({
-    origin: 'https://short-it-anujbhushantiw2685s-projects.vercel.app/', // your React app
+    origin: 'https://short-it-anujbhushantiw2685s-projects.vercel.app', // <-- No trailing slash
     credentials: true // 👈 this allows cookies to be sent
 }));
 
@@ -38,4 +38,4 @@ app.listen(3000,()=>{
     console.log("Server is running on http://localhost:3000");
 })
 
-// GET - Redirection 
+// GET - Redirection
